@@ -13,7 +13,7 @@ export default function TermsOfService() {
 
       <h2>1. Agreement to Terms</h2>
       <p>
-        By accessing or using the website and services provided by Kanzen Technologies ("we," "us," or "our"), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access our services.
+        By accessing or using the website and services provided by Kanzen Technologies (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access our services.
       </p>
 
       <h2>2. Intellectual Property</h2>
@@ -52,7 +52,7 @@ export default function TermsOfService() {
 
       <h2>7. Disclaimer</h2>
       <p>
-        Your use of the service is at your sole risk. The service is provided on an "AS IS" and "AS AVAILABLE" basis. The service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
+        Your use of the service is at your sole risk. The service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. The service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
       </p>
 
       <h2>8. Governing Law</h2>

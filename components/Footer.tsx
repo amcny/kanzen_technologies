@@ -39,8 +39,6 @@ export function Footer() {
             <h4 className="font-display font-bold text-text-primary mb-6">Social</h4>
             <ul className="space-y-4">
               <li><a href="#" className="text-text-secondary hover:text-accent-primary transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-accent-primary transition-colors">Twitter</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-accent-primary transition-colors">GitHub</a></li>
               <li><a href="mailto:contact@kanzen.tech" className="text-text-secondary hover:text-accent-primary transition-colors">Email Us</a></li>
             </ul>
           </div>

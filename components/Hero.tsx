@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section id="home" className="relative pt-40 pb-24 md:pt-56 md:pb-32 overflow-hidden bg-primary">
+    <section id="home" className="relative pt-40 pb-24 md:pt-56 md:pb-32 overflow-clip bg-primary">
       {/* Abstract Pattern Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         {/* Dot Grid */}

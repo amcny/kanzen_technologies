@@ -5,7 +5,7 @@ import { ArrowRight, Linkedin } from 'lucide-react';
 
 export function Cta() {
   return (
-    <section id="contact" className="py-32 md:py-48 bg-primary border-y border-border-light relative overflow-hidden">
+    <section id="contact" className="py-32 md:py-48 bg-primary border-y border-border-light relative overflow-clip">
       {/* Abstract Pattern Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         {/* Dot Grid */}

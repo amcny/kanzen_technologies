@@ -12,7 +12,7 @@ const logos = [
 
 export function SocialProof() {
   return (
-    <section className="py-20 md:py-32 bg-primary border-b border-border-light overflow-hidden">
+    <section className="py-20 md:py-32 bg-primary border-b border-border-light overflow-clip">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.p
           initial={{ opacity: 0, y: 10 }}

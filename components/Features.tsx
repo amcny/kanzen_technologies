@@ -5,33 +5,33 @@ import { FadeIn } from './FadeIn';
 
 const features = [
   {
-    title: 'Startup-focused development',
-    description: 'We understand the pace and agility required to build products that win in competitive markets.',
+    title: 'Agile & Adaptive',
+    description: 'We thrive in fast-paced environments, adapting quickly to market shifts to keep your product ahead of the curve.',
     icon: Rocket,
   },
   {
-    title: 'Scalable architecture',
-    description: 'Systems designed to grow with your user base, ensuring reliability and performance at scale.',
+    title: 'Future-Proof Architecture',
+    description: 'We build resilient systems from day one, ensuring your platform handles explosive growth without compromising performance.',
     icon: Layers,
   },
   {
-    title: 'AI-ready solutions',
-    description: 'Future-proof your business with intelligent features and automated workflows.',
+    title: 'AI-Integrated Solutions',
+    description: 'Seamlessly embed machine learning capabilities and smart automation to unlock new operational efficiencies.',
     icon: Zap,
   },
   {
-    title: 'Fast delivery cycles',
-    description: 'Iterative development and rapid prototyping to get your product to market faster.',
+    title: 'Rapid Iteration Cycles',
+    description: 'We prioritize speed-to-market through continuous integration, rapid prototyping, and swift deployment phases.',
     icon: Clock,
   },
   {
-    title: 'Design-first thinking',
-    description: 'Every line of code is guided by a commitment to exceptional user experience and aesthetics.',
+    title: 'Design-Driven Engineering',
+    description: 'Our engineering process is deeply intertwined with UX principles, ensuring beautiful, intuitive end products.',
     icon: Palette,
   },
   {
-    title: 'Transparent communication',
-    description: 'Clear, consistent updates and collaborative planning throughout the project lifecycle.',
+    title: 'Radical Transparency',
+    description: 'Maintain full visibility into our progress with open communication channels and collaborative sprint planning.',
     icon: MessageCircle,
   },
 ];
@@ -43,12 +43,12 @@ export function Features() {
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
-              Why Choose Kanzen
+              The Kanzen Advantage
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-              We combine technical expertise with a deep understanding of business goals to deliver exceptional results.
+              We bridge the gap between technical mastery and strategic business vision to engineer products that stand out.
             </p>
           </FadeIn>
         </div>

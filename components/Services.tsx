@@ -5,33 +5,33 @@ import { FadeIn } from './FadeIn';
 
 const services = [
   {
-    title: 'Custom Software Development',
-    description: 'Bespoke software solutions tailored to your unique business needs, built for scale and performance.',
+    title: 'Bespoke Software Engineering',
+    description: 'Tailored applications engineered to solve complex challenges, ensuring high performance and limitless scalability.',
     icon: Code2,
   },
   {
-    title: 'AI & Automation Solutions',
-    description: 'Integrating intelligent algorithms and automation to streamline operations and unlock new capabilities.',
+    title: 'Intelligent Automation & AI',
+    description: 'Leveraging cutting-edge machine learning and automated workflows to optimize your business operations.',
     icon: Cpu,
   },
   {
-    title: 'Web & SaaS Development',
-    description: 'High-performance web applications and scalable SaaS platforms designed for modern users.',
+    title: 'Scalable Web & SaaS Platforms',
+    description: 'Architecting robust cloud-native applications and SaaS products with exceptional user experiences.',
     icon: Globe,
   },
   {
-    title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile experiences that engage users and drive growth.',
+    title: 'Native & Cross-Platform Mobile',
+    description: 'Crafting fluid, high-performance mobile applications for iOS and Android ecosystems.',
     icon: Smartphone,
   },
   {
-    title: 'UI/UX Design',
-    description: 'Human-centered design systems that create intuitive, beautiful, and accessible interfaces.',
+    title: 'Strategic UI/UX Design',
+    description: 'Data-driven, user-centric design systems that elevate brand identity and product usability.',
     icon: PenTool,
   },
   {
-    title: 'Cloud & DevOps',
-    description: 'Robust cloud architectures and CI/CD pipelines for reliable, fast, and secure deployments.',
+    title: 'Cloud Infrastructure & DevOps',
+    description: 'Designing resilient cloud architectures and automated pipelines for secure, rapid deployment.',
     icon: Cloud,
   },
 ];
@@ -43,12 +43,12 @@ export function Services() {
         <div className="max-w-3xl mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
-              Capabilities
+              Our Expertise
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-              We deliver end-to-end technology solutions, combining engineering excellence with strategic design to build products that matter.
+              From concept to deployment, we provide comprehensive engineering and design services to build products that drive real business value.
             </p>
           </FadeIn>
         </div>

@@ -16,7 +16,7 @@ export function SocialProof() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn>
           <p className="text-center text-xs font-semibold text-text-secondary uppercase tracking-[0.2em] mb-16">
-            Trusted by ambitious startups and digital-first companies
+            Empowering industry leaders and fast-growing innovators
           </p>
         </FadeIn>
         

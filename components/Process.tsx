@@ -5,23 +5,23 @@ import { FadeIn } from './FadeIn';
 const steps = [
   {
     number: '01',
-    title: 'Discovery',
-    description: 'Understanding goals, users, and product vision to define the roadmap.',
+    title: 'Strategy & Alignment',
+    description: 'Deep-diving into your business objectives, user needs, and market landscape to forge a clear technical roadmap.',
   },
   {
     number: '02',
-    title: 'Design',
-    description: 'Creating high quality UX and UI systems that are both beautiful and functional.',
+    title: 'Experience Architecture',
+    description: 'Crafting intuitive user journeys and striking visual interfaces that prioritize usability and engagement.',
   },
   {
     number: '03',
-    title: 'Development',
-    description: 'Engineering scalable and robust applications using modern technologies.',
+    title: 'Agile Engineering',
+    description: 'Writing clean, maintainable code using modern tech stacks to build robust and scalable platforms.',
   },
   {
     number: '04',
-    title: 'Launch & Scale',
-    description: 'Deploying, optimizing, and growing the product for long-term success.',
+    title: 'Deployment & Evolution',
+    description: 'Executing seamless launches, monitoring performance, and iterating rapidly to drive continuous growth.',
   },
 ];
 
@@ -32,12 +32,12 @@ export function Process() {
         <div className="max-w-3xl mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
-              How We Work
+              Our Methodology
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-              A streamlined, transparent process designed to turn complex ideas into elegant digital realities.
+              An agile, transparent approach focused on delivering scalable and elegant digital products efficiently.
             </p>
           </FadeIn>
         </div>

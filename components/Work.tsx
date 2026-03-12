@@ -6,27 +6,27 @@ import { FadeIn } from './FadeIn';
 
 const projects = [
   {
-    title: 'FinTech Dashboard',
+    title: 'Financial Intelligence Hub',
     category: 'Web Application',
-    description: 'A comprehensive financial analytics platform with real-time data visualization.',
+    description: 'An enterprise-grade analytics dashboard featuring real-time data processing and interactive visualizations.',
     image: 'https://picsum.photos/seed/fintech/800/600',
   },
   {
-    title: 'Health AI Platform',
+    title: 'MedTech AI Assistant',
     category: 'AI & Automation',
-    description: 'Intelligent diagnostic assistance tool powered by advanced machine learning models.',
+    description: 'A sophisticated diagnostic tool leveraging predictive AI models to assist healthcare professionals.',
     image: 'https://picsum.photos/seed/health/800/600',
   },
   {
-    title: 'E-Commerce App',
+    title: 'Next-Gen Retail App',
     category: 'Mobile Development',
-    description: 'Seamless shopping experience with personalized recommendations and fast checkout.',
+    description: 'A frictionless mobile shopping experience featuring AI-driven product recommendations and instant checkout.',
     image: 'https://picsum.photos/seed/ecommerce/800/600',
   },
   {
-    title: 'SaaS Analytics',
+    title: 'DataOps SaaS Platform',
     category: 'UI/UX Design',
-    description: 'Clean, intuitive interface for managing complex data sets and user metrics.',
+    description: 'A streamlined, powerful interface designed for managing massive datasets and tracking core business metrics.',
     image: 'https://picsum.photos/seed/saas/800/600',
   },
 ];
@@ -39,12 +39,12 @@ export function Work() {
           <div className="max-w-3xl">
             <FadeIn>
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
-                Featured Work
+                Selected Projects
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-                Explore some of our recent projects where we&apos;ve helped ambitious companies scale their digital presence.
+                Discover how we&apos;ve empowered innovative brands to achieve their technological goals and scale effectively.
               </p>
             </FadeIn>
           </div>
@@ -53,7 +53,7 @@ export function Work() {
               href="#"
               className="inline-flex items-center text-accent-primary font-medium hover:text-accent-secondary transition-colors group"
             >
-              View All Projects
+              Browse Full Portfolio
               <ArrowUpRight className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
           </FadeIn>

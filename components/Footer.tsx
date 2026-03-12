@@ -46,7 +46,7 @@ export function Footer() {
               Kanzen
             </Link>
             <p className="text-text-secondary max-w-sm leading-relaxed mb-8">
-              Engineering digital excellence for ambitious startups and modern businesses worldwide.
+              Crafting premium digital solutions for forward-thinking brands globally.
             </p>
           </div>
 

@@ -75,7 +75,7 @@ export function Navbar() {
       <div 
         className={`w-full transition-all duration-500 flex items-center justify-between ${
           isScrolled 
-            ? 'max-w-5xl bg-primary/80 backdrop-blur-md border border-border-light rounded-full py-3 px-6 shadow-lg shadow-black/5' 
+            ? 'max-w-5xl glass-panel rounded-full py-3 px-6' 
             : 'max-w-7xl bg-transparent py-6 px-6 md:px-12'
         }`}
       >
@@ -87,8 +87,9 @@ export function Navbar() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }
           }}
-          className="text-2xl font-display font-bold tracking-tight text-text-primary"
+          className="text-2xl font-display font-bold tracking-tight text-gray-900 flex items-center gap-2"
         >
+          <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center text-sm">K</div>
           Kanzen
         </Link>
 
@@ -99,7 +100,7 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm font-medium text-text-secondary hover:text-accent-primary transition-colors"
+              className="text-sm font-medium text-text-secondary hover:text-gray-900 transition-colors"
             >
               {link.name}
             </Link>
@@ -110,7 +111,7 @@ export function Navbar() {
           <Link
             href="/#contact"
             onClick={(e) => handleNavClick(e, '/#contact')}
-            className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full"
+            className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 transition-colors rounded-full premium-glow"
           >
             Book a Strategy Call
           </Link>
@@ -118,7 +119,7 @@ export function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden flex items-center gap-2 px-3 py-2 text-sm font-medium text-text-primary bg-secondary border border-border-light rounded-full hover:bg-border-light transition-colors"
+          className="lg:hidden flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-900 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -161,7 +162,7 @@ export function Navbar() {
             <Link
               href="/#contact"
               onClick={(e) => handleNavClick(e, '/#contact')}
-              className="inline-flex items-center justify-center px-6 py-4 mt-2 text-base font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full text-center"
+              className="inline-flex items-center justify-center px-6 py-4 mt-2 text-base font-medium text-white bg-gray-900 hover:bg-gray-800 transition-colors rounded-full text-center"
             >
               Book a Strategy Call
             </Link>

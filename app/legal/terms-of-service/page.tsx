@@ -106,7 +106,7 @@ export default function TermsOfService() {
 
       <h2>10. Contact Us</h2>
       <p>
-        If you have any questions about these Terms, please contact us at <a href="mailto:contact@kanzen.tech">contact@kanzen.tech</a>.
+        If you have any questions about these Terms, please contact us at <a href="mailto:contact@kanzentech.com">contact@kanzentech.com</a>.
       </p>
     </>
   );

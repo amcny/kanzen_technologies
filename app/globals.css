@@ -3,13 +3,13 @@
 
 @theme {
   --color-primary: #FFFFFF;
-  --color-secondary: #F7F7FA;
-  --color-accent-primary: #5B5FFF;
-  --color-accent-secondary: #7B7BFF;
-  --color-luxury: #C9A227;
-  --color-text-primary: #111111;
-  --color-text-secondary: #5A5A6A;
-  --color-border-light: #E6E6EF;
+  --color-secondary: #F9FAFB;
+  --color-accent-primary: #000000;
+  --color-accent-secondary: #4B5563;
+  --color-luxury: #111827;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-border-light: #E5E7EB;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-satoshi);
@@ -17,7 +17,7 @@
 
 @layer base {
   body {
-    @apply bg-primary text-text-primary font-sans antialiased selection:bg-accent-primary/20 selection:text-accent-primary;
+    @apply bg-primary text-text-primary font-sans antialiased selection:bg-black/10 selection:text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -42,5 +42,17 @@
 
   .lenis.lenis-smooth iframe {
     pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-500;
+  }
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-xl border border-gray-200 shadow-sm;
+  }
+  .premium-glow {
+    @apply relative before:absolute before:inset-0 before:-z-10 before:translate-y-2 before:scale-[0.95] before:bg-black/5 before:blur-xl before:transition-all hover:before:bg-black/10 hover:before:scale-100;
   }
 }

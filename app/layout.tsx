@@ -14,15 +14,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://kanzen.tech'),
   title: {
-    default: 'Kanzen Technologies | Engineering Digital Excellence',
+    default: 'Kanzen Technologies | Custom Software & Digital Products',
     template: '%s | Kanzen Technologies',
   },
-  description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses. We specialize in custom software, AI integration, and enterprise architecture.',
+  description: 'Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.',
   keywords: [
-    'Software Development', 'Web Development', 'Mobile Apps', 'AI Automation', 
-    'SaaS', 'Startups', 'Tech Agency', 'Kanzen Technologies', 'Custom Software',
-    'Enterprise Architecture', 'Cloud Solutions', 'Digital Transformation',
-    'React', 'Next.js', 'Node.js', 'TypeScript', 'UI/UX Design'
+    'Software Development Company', 'Custom Software Development', 'Web App Development', 'Mobile App Development', 
+    'AI Integration', 'SaaS Development', 'Tech Agency', 'Kanzen Technologies', 'Digital Transformation',
+    'Enterprise Software', 'React Development', 'Next.js Experts', 'Node.js Development', 'UI/UX Design',
+    'Continuous Improvement', 'Software Engineering'
   ],
   authors: [{ name: 'Kanzen Technologies', url: 'https://kanzen.tech' }],
   creator: 'Kanzen Technologies',
@@ -39,22 +39,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://kanzen.tech',
-    title: 'Kanzen Technologies | Engineering Digital Excellence',
-    description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses.',
+    title: 'Kanzen Technologies | Custom Software & Digital Products',
+    description: 'Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.',
     siteName: 'Kanzen Technologies',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kanzen Technologies - Engineering Digital Excellence',
+        alt: 'Kanzen Technologies - Custom Software & Digital Products',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kanzen Technologies | Engineering Digital Excellence',
-    description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses.',
+    title: 'Kanzen Technologies | Custom Software & Digital Products',
+    description: 'Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.',
     images: ['/og-image.jpg'],
     creator: '@kanzentech',
   },
@@ -68,9 +68,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-site-verification-code', // Placeholder for actual verification
   },
   category: 'technology',
 };

@@ -55,4 +55,11 @@
   .premium-glow {
     @apply relative before:absolute before:inset-0 before:-z-10 before:translate-y-2 before:scale-[0.95] before:bg-black/5 before:blur-xl before:transition-all hover:before:bg-black/10 hover:before:scale-100;
   }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -23,11 +23,11 @@ export function Cta() {
         <FadeIn delay={0.2} className="flex flex-col items-center justify-center gap-8">
           <a 
             href="mailto:contact@kanzentech.com" 
-            className="premium-glow group inline-flex items-center gap-4 px-8 py-5 md:px-10 md:py-6 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-black/10 hover:-translate-y-1"
+            className="premium-glow group inline-flex items-center gap-3 md:gap-4 px-5 py-4 md:px-10 md:py-6 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-black/10 hover:-translate-y-1 max-w-full"
           >
-            <Mail className="w-6 h-6" />
-            <span className="text-lg md:text-xl font-bold tracking-wide">contact@kanzentech.com</span>
-            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            <Mail className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
+            <span className="text-base sm:text-lg md:text-xl font-bold tracking-wide truncate">contact@kanzentech.com</span>
+            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 shrink-0 group-hover:translate-x-1 transition-transform" />
           </a>
 
           <div className="flex items-center justify-center gap-4 pt-4">

@@ -1,16 +1,17 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'Services', href: '#services' },
-  { name: 'Work', href: '#work' },
-  { name: 'Process', href: '#process' },
-  { name: 'About', href: '#about' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Work', href: '/#work' },
+  { name: 'Process', href: '/#process' },
+  { name: 'About', href: '/#about' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export function Navbar() {
@@ -55,30 +56,30 @@ export function Navbar() {
             : 'max-w-7xl bg-transparent py-6 px-6 md:px-12'
         }`}
       >
-        <a href="#home" className="text-2xl font-display font-bold tracking-tight text-text-primary">
+        <Link href="/" className="text-2xl font-display font-bold tracking-tight text-text-primary">
           Kanzen
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="text-sm font-medium text-text-secondary hover:text-accent-primary transition-colors"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden lg:block">
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full"
           >
             Book a Strategy Call
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -114,22 +115,22 @@ export function Navbar() {
             }`}
           >
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg font-medium text-text-primary hover:text-accent-primary transition-colors px-4 py-2 rounded-xl hover:bg-secondary"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="inline-flex items-center justify-center px-6 py-4 mt-2 text-base font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full text-center"
             >
               Book a Strategy Call
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

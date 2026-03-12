@@ -35,20 +35,20 @@ export function Work() {
   return (
     <section id="work" className="py-32 md:py-48 bg-secondary">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 gap-8">
-          <div className="max-w-3xl">
+        <div className="flex flex-col items-center text-center mb-16 md:mb-24 gap-8">
+          <div className="max-w-3xl mx-auto">
             <FadeIn>
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
                 Selected Projects
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-6">
                 Discover how we&apos;ve empowered innovative brands to achieve their technological goals and scale effectively.
               </p>
             </FadeIn>
           </div>
-          <FadeIn delay={0.2} direction="left">
+          <FadeIn delay={0.2} direction="up">
             <a
               href="#"
               className="inline-flex items-center text-accent-primary font-medium hover:text-accent-secondary transition-colors group"

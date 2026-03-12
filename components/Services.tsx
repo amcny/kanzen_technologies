@@ -1,73 +1,99 @@
 'use client';
 
-import { Code2, Cpu, Globe, Smartphone, PenTool, Cloud } from 'lucide-react';
+import Image from 'next/image';
 import { FadeIn } from './FadeIn';
 
 const services = [
   {
     title: 'Bespoke Software Engineering',
-    description: 'Tailored applications engineered to solve complex challenges, ensuring high performance and limitless scalability.',
-    icon: Code2,
+    img1: 'https://picsum.photos/seed/software1/400/300',
+    img2: 'https://picsum.photos/seed/software2/400/300',
   },
   {
     title: 'Intelligent Automation & AI',
-    description: 'Leveraging cutting-edge machine learning and automated workflows to optimize your business operations.',
-    icon: Cpu,
+    img1: 'https://picsum.photos/seed/ai1/400/300',
+    img2: 'https://picsum.photos/seed/ai2/400/300',
   },
   {
     title: 'Scalable Web & SaaS Platforms',
-    description: 'Architecting robust cloud-native applications and SaaS products with exceptional user experiences.',
-    icon: Globe,
+    img1: 'https://picsum.photos/seed/web1/400/300',
+    img2: 'https://picsum.photos/seed/web2/400/300',
   },
   {
     title: 'Native & Cross-Platform Mobile',
-    description: 'Crafting fluid, high-performance mobile applications for iOS and Android ecosystems.',
-    icon: Smartphone,
+    img1: 'https://picsum.photos/seed/mobile1/400/300',
+    img2: 'https://picsum.photos/seed/mobile2/400/300',
   },
   {
     title: 'Strategic UI/UX Design',
-    description: 'Data-driven, user-centric design systems that elevate brand identity and product usability.',
-    icon: PenTool,
+    img1: 'https://picsum.photos/seed/design1/400/300',
+    img2: 'https://picsum.photos/seed/design2/400/300',
   },
   {
     title: 'Cloud Infrastructure & DevOps',
-    description: 'Designing resilient cloud architectures and automated pipelines for secure, rapid deployment.',
-    icon: Cloud,
+    img1: 'https://picsum.photos/seed/cloud1/400/300',
+    img2: 'https://picsum.photos/seed/cloud2/400/300',
   },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="py-32 md:py-48 bg-secondary">
+    <section id="services" className="py-24 md:py-32 bg-secondary border-y border-border-light overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mb-16 md:mb-24">
+        <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <FadeIn>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
-              Our Expertise
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
+              Solutions Tailored for Your Growth
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-              From concept to deployment, we provide comprehensive engineering and design services to build products that drive real business value.
+              Discover our full-service offerings — crafted to deliver reliability, scalability, and results
             </p>
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
           {services.map((service, index) => (
-            <FadeIn key={service.title} delay={index * 0.1}>
-              <div className="group p-10 md:p-12 rounded-[2rem] bg-primary border border-border-light hover:border-border-light/80 hover:shadow-xl hover:shadow-black/5 transition-all duration-500 hover:-translate-y-1 h-full">
-                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6 border border-border-light group-hover:bg-accent-primary group-hover:border-accent-primary transition-colors duration-300">
-                  <service.icon className="w-6 h-6 text-text-primary group-hover:text-primary transition-colors duration-300" />
+            <div key={service.title} className="border border-dashed border-border-light -ml-px -mt-px h-full relative group hover:border-accent-primary hover:z-10 hover:bg-primary/50 transition-all duration-300">
+              <FadeIn delay={index * 0.1} className="h-full">
+                <div className="flex flex-col gap-6 items-center justify-center w-full h-full cursor-pointer p-8 md:p-12">
+                  
+                  {/* Small overlapping images */}
+                  <div className="flex items-center justify-center">
+                    <div className="z-10 -rotate-12 translate-x-3.5 transition-transform duration-300 ease-in-out group-hover:-translate-y-2">
+                      <div className="w-[5rem] h-[3.8rem] md:w-[6rem] md:h-[4.5rem] border-[3px] border-primary shadow-md overflow-hidden bg-border-light">
+                        <Image
+                          src={service.img1}
+                          alt={`${service.title} image 1`}
+                          width={100}
+                          height={75}
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                    </div>
+                    <div className="rotate-12 -translate-x-3.5 transition-transform duration-300 ease-in-out group-hover:-translate-y-2">
+                      <div className="w-[5rem] h-[3.8rem] md:w-[6rem] md:h-[4.5rem] border-[3px] border-primary shadow-md overflow-hidden bg-border-light">
+                        <Image
+                          src={service.img2}
+                          alt={`${service.title} image 2`}
+                          width={100}
+                          height={75}
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <span className="inline-block text-lg md:text-xl font-display font-bold tracking-tight text-center leading-[1.2] text-text-primary transition-transform duration-300 ease-in-out group-hover:-translate-y-1">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-text-primary mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-text-secondary leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           ))}
         </div>
       </div>

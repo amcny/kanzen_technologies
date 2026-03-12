@@ -1,74 +1,41 @@
 'use client';
 
-import { ArrowRight, Linkedin } from 'lucide-react';
+import { Mail, Instagram, Linkedin, ArrowRight } from 'lucide-react';
 import { FadeIn } from './FadeIn';
 
 export function Cta() {
   return (
-    <section id="contact" className="py-32 md:py-48 bg-primary border-y border-border-light relative overflow-clip">
-      {/* Abstract Pattern Background */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] rounded-full bg-accent-primary/5 blur-[120px]" />
-        </div>
-      </div>
-
-      <div className="max-w-4xl mx-auto px-6 md:px-12 text-center relative z-10">
+    <section id="contact" className="py-32 md:py-48 bg-secondary border-y border-border-light">
+      <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <FadeIn>
-          <h2 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-black text-text-primary tracking-tighter leading-[0.9] mb-8 text-balance">
-            Ready to Transform <br className="hidden md:block" /> Your Vision?
+          <h2 className="text-5xl md:text-7xl font-display font-black text-text-primary tracking-tighter mb-6">
+            Let&apos;s Collaborate
           </h2>
         </FadeIn>
         
         <FadeIn delay={0.1}>
-          <p className="text-xl md:text-2xl text-text-secondary max-w-2xl mx-auto mb-12 leading-relaxed">
-            Collaborate with our expert team to craft digital experiences that drive real impact.
+          <p className="text-xl text-text-secondary leading-relaxed mb-12 max-w-2xl mx-auto">
+            Reach out and let&apos;s explore how we can bring your ideas to life. Whether you&apos;re ready to begin or just have questions, we are happy to assist you.
           </p>
         </FadeIn>
         
-        <FadeIn delay={0.2}>
-          <div className="flex flex-col items-center">
-            <a
-              href="mailto:contact@kanzen.tech"
-              className="inline-flex items-center justify-center px-10 py-5 text-lg font-medium text-primary bg-accent-primary hover:bg-accent-primary/90 transition-colors rounded-full group shadow-lg shadow-accent-primary/20 mb-10"
-            >
-              Initiate Your Project
-              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+        <FadeIn delay={0.2} className="flex flex-col items-center justify-center gap-8">
+          <a 
+            href="mailto:hello@example.com" 
+            className="group inline-flex items-center gap-4 px-8 py-5 md:px-10 md:py-6 rounded-full bg-text-primary text-primary hover:bg-accent-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+          >
+            <Mail className="w-6 h-6" />
+            <span className="text-lg md:text-xl font-bold tracking-wide">hello@example.com</span>
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+          </a>
 
-            <div className="flex flex-col items-center gap-4 text-text-secondary">
-              <p className="text-lg">Or connect directly with our leadership team:</p>
-              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-xl font-medium">
-                <a 
-                  href="https://www.linkedin.com/in/chaitanyapullagura/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 text-text-primary hover:text-accent-primary transition-colors group"
-                >
-                  <span className="bg-[#0A66C2]/10 text-[#0A66C2] p-1.5 rounded-md group-hover:bg-[#0A66C2] group-hover:text-white transition-colors">
-                    <Linkedin className="w-4 h-4" />
-                  </span>
-                  <span className="underline underline-offset-4 decoration-border-light group-hover:decoration-accent-primary/50">
-                    Chaitanya Pullagura
-                  </span>
-                </a>
-                <span className="hidden sm:block text-border-light">|</span>
-                <a 
-                  href="https://www.linkedin.com/in/irrinkiharsha/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 text-text-primary hover:text-accent-primary transition-colors group"
-                >
-                  <span className="bg-[#0A66C2]/10 text-[#0A66C2] p-1.5 rounded-md group-hover:bg-[#0A66C2] group-hover:text-white transition-colors">
-                    <Linkedin className="w-4 h-4" />
-                  </span>
-                  <span className="underline underline-offset-4 decoration-border-light group-hover:decoration-accent-primary/50">
-                    Harsha Vardhan Irrinki
-                  </span>
-                </a>
-              </div>
-              <a href="mailto:contact@kanzen.tech" className="text-accent-primary hover:text-accent-secondary transition-colors font-medium mt-2">contact@kanzen.tech</a>
-            </div>
+          <div className="flex items-center justify-center gap-4 pt-4">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-primary border border-border-light flex items-center justify-center text-text-primary hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-all shadow-sm hover:-translate-y-1">
+              <Instagram className="w-6 h-6" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-primary border border-border-light flex items-center justify-center text-text-primary hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-all shadow-sm hover:-translate-y-1">
+              <Linkedin className="w-6 h-6" />
+            </a>
           </div>
         </FadeIn>
       </div>

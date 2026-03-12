@@ -12,14 +12,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kanzen.tech'),
   title: {
     default: 'Kanzen Technologies | Engineering Digital Excellence',
     template: '%s | Kanzen Technologies',
   },
-  description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses.',
-  keywords: ['Software Development', 'Web Development', 'Mobile Apps', 'AI Automation', 'SaaS', 'Startups', 'Tech Agency', 'Kanzen Technologies'],
-  authors: [{ name: 'Kanzen Technologies' }],
+  description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses. We specialize in custom software, AI integration, and enterprise architecture.',
+  keywords: [
+    'Software Development', 'Web Development', 'Mobile Apps', 'AI Automation', 
+    'SaaS', 'Startups', 'Tech Agency', 'Kanzen Technologies', 'Custom Software',
+    'Enterprise Architecture', 'Cloud Solutions', 'Digital Transformation',
+    'React', 'Next.js', 'Node.js', 'TypeScript', 'UI/UX Design'
+  ],
+  authors: [{ name: 'Kanzen Technologies', url: 'https://kanzen.tech' }],
   creator: 'Kanzen Technologies',
+  publisher: 'Kanzen Technologies',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -29,10 +44,10 @@ export const metadata: Metadata = {
     siteName: 'Kanzen Technologies',
     images: [
       {
-        url: 'https://kanzen.tech/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kanzen Technologies',
+        alt: 'Kanzen Technologies - Engineering Digital Excellence',
       },
     ],
   },
@@ -40,7 +55,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kanzen Technologies | Engineering Digital Excellence',
     description: 'Kanzen Technologies builds high-performance digital products, scalable platforms, and intelligent solutions for startups and modern businesses.',
-    images: ['https://kanzen.tech/og-image.jpg'],
+    images: ['/og-image.jpg'],
+    creator: '@kanzentech',
   },
   robots: {
     index: true,
@@ -53,6 +69,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'your-google-site-verification-code', // Placeholder for actual verification
+  },
+  category: 'technology',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

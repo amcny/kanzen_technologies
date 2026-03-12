@@ -29,7 +29,7 @@ export function Process() {
   return (
     <section id="process" className="py-32 md:py-48 bg-primary border-y border-border-light">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mb-16 md:mb-24">
+        <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter mb-6 text-balance">
               Our Methodology

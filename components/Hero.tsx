@@ -73,10 +73,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-black text-text-primary leading-[0.9] tracking-tighter mb-8 text-balance"
+            className="text-5xl md:text-7xl lg:text-[6.5rem] font-display font-extrabold text-text-primary leading-[1.1] tracking-tight mb-8 text-balance"
           >
-            Architecting Digital Futures, <br className="hidden md:block" />{" "}
-            Engineering Excellence.
+            Building powerful software <br className="hidden lg:block" />{" "}
+            for modern businesses.
           </motion.h1>
 
           <motion.p

@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { name: 'Home', href: '/#home' },
@@ -19,6 +20,7 @@ export function Navbar() {
   const [isHidden, setIsHidden] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
+  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -36,6 +38,21 @@ export function Navbar() {
       setIsHidden(false);
     }
   });
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('/#') && pathname === '/') {
+      e.preventDefault();
+      const targetId = href.replace('/#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', href);
+      }
+      setIsMobileMenuOpen(false);
+    } else {
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <motion.header
@@ -56,7 +73,16 @@ export function Navbar() {
             : 'max-w-7xl bg-transparent py-6 px-6 md:px-12'
         }`}
       >
-        <Link href="/" className="text-2xl font-display font-bold tracking-tight text-text-primary">
+        <Link 
+          href="/" 
+          onClick={(e) => {
+            if (pathname === '/') {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+          className="text-2xl font-display font-bold tracking-tight text-text-primary"
+        >
           Kanzen
         </Link>
 
@@ -66,6 +92,7 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-medium text-text-secondary hover:text-accent-primary transition-colors"
             >
               {link.name}
@@ -76,6 +103,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <Link
             href="/#contact"
+            onClick={(e) => handleNavClick(e, '/#contact')}
             className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full"
           >
             Book a Strategy Call
@@ -118,7 +146,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-lg font-medium text-text-primary hover:text-accent-primary transition-colors px-4 py-2 rounded-xl hover:bg-secondary"
               >
                 {link.name}
@@ -126,7 +154,7 @@ export function Navbar() {
             ))}
             <Link
               href="/#contact"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, '/#contact')}
               className="inline-flex items-center justify-center px-6 py-4 mt-2 text-base font-medium text-primary bg-text-primary hover:bg-accent-primary transition-colors rounded-full text-center"
             >
               Book a Strategy Call

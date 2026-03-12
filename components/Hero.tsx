@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'motion/react';
 import { ArrowRight, Calendar, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
@@ -65,20 +66,20 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-primary bg-text-primary hover:bg-text-primary/90 transition-colors rounded-full group shadow-xl shadow-black/10"
             >
               <Calendar className="mr-2 w-5 h-5" />
               Book a 30-Min Call
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#work"
+            </Link>
+            <Link
+              href="/#work"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-text-primary bg-primary hover:bg-secondary border border-border-light transition-colors rounded-full shadow-sm"
             >
               View Our Work
-            </a>
+            </Link>
           </motion.div>
         </div>
 

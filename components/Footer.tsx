@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useLenis } from 'lenis/react';
 
 export function Footer() {
   const pathname = usePathname();
+  const lenis = useLenis();
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('/#') && pathname === '/') {
@@ -12,9 +14,13 @@ export function Footer() {
       const targetId = href.replace('/#', '');
       const element = document.getElementById(targetId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        window.history.pushState(null, '', href);
+        if (lenis) {
+          lenis.scrollTo(element, { offset: -80 });
+        } else {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
+      window.history.pushState(null, '', href);
     }
   };
 
@@ -28,7 +34,11 @@ export function Footer() {
               onClick={(e) => {
                 if (pathname === '/') {
                   e.preventDefault();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  if (lenis) {
+                    lenis.scrollTo(0);
+                  } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
                 }
               }}
               className="text-2xl font-display font-bold tracking-tight text-text-primary mb-6 inline-block"

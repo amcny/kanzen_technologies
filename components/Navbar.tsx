@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { useLenis } from 'lenis/react';
 
 const navLinks = [
   { name: 'Home', href: '/#home' },
@@ -21,6 +22,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
   const pathname = usePathname();
+  const lenis = useLenis();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -45,9 +47,13 @@ export function Navbar() {
       const targetId = href.replace('/#', '');
       const element = document.getElementById(targetId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        window.history.pushState(null, '', href);
+        if (lenis) {
+          lenis.scrollTo(element, { offset: -80 });
+        } else {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
+      window.history.pushState(null, '', href);
       setIsMobileMenuOpen(false);
     } else {
       setIsMobileMenuOpen(false);

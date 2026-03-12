@@ -4,8 +4,29 @@ import Link from 'next/link';
 import { motion } from 'motion/react';
 import { ArrowRight, Calendar, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { useLenis } from 'lenis/react';
 
 export function Hero() {
+  const pathname = usePathname();
+  const lenis = useLenis();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('/#') && pathname === '/') {
+      e.preventDefault();
+      const targetId = href.replace('/#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        if (lenis) {
+          lenis.scrollTo(element, { offset: -80 });
+        } else {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      window.history.pushState(null, '', href);
+    }
+  };
+
   return (
     <section id="home" className="relative pt-40 pb-24 md:pt-56 md:pb-32 overflow-clip bg-primary">
       {/* Abstract Pattern Background */}
@@ -68,6 +89,7 @@ export function Hero() {
           >
             <Link
               href="/#contact"
+              onClick={(e) => handleNavClick(e, '/#contact')}
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-primary bg-text-primary hover:bg-text-primary/90 transition-colors rounded-full group shadow-xl shadow-black/10"
             >
               <Calendar className="mr-2 w-5 h-5" />
@@ -76,6 +98,7 @@ export function Hero() {
             </Link>
             <Link
               href="/#work"
+              onClick={(e) => handleNavClick(e, '/#work')}
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-text-primary bg-primary hover:bg-secondary border border-border-light transition-colors rounded-full shadow-sm"
             >
               View Our Work

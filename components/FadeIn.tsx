@@ -25,7 +25,7 @@ export function FadeIn({ children, delay = 0, direction = 'up', className = '' }
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.7, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
       className={className}
-      style={{ willChange: "opacity, transform" }}
+      style={{ transform: "translateZ(0)" }}
     >
       {children}
     </motion.div>

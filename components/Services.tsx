@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FadeIn } from './FadeIn';
+import { shimmer, toBase64 } from '@/lib/utils';
 
 const services = [
   {
@@ -70,6 +71,8 @@ export function Services() {
                           alt={`${service.title} image 1`}
                           width={100}
                           height={75}
+                          placeholder="blur"
+                          blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(100, 75))}`}
                           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                           referrerPolicy="no-referrer"
                         />
@@ -82,6 +85,8 @@ export function Services() {
                           alt={`${service.title} image 2`}
                           width={100}
                           height={75}
+                          placeholder="blur"
+                          blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(100, 75))}`}
                           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                           referrerPolicy="no-referrer"
                         />

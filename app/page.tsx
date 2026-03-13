@@ -31,8 +31,8 @@ export default function Home() {
     <main className="min-h-screen bg-primary relative overflow-hidden">
       {/* Global Background Decorations */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-black/[0.02] rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-black/[0.015] rounded-full blur-[150px]" />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full" style={{ background: "radial-gradient(circle, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 70%)", transform: "translateZ(0)" }} />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(0,0,0,0.015) 0%, rgba(0,0,0,0) 70%)", transform: "translateZ(0)" }} />
       </div>
       
       <div className="relative z-10">

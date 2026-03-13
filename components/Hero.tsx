@@ -44,7 +44,8 @@ export function Hero() {
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-gray-200 blur-[120px]" 
+          className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(229,231,235,1) 0%, rgba(229,231,235,0) 70%)", transform: "translateZ(0)" }}
         />
         <motion.div 
           animate={{ 
@@ -52,7 +53,8 @@ export function Hero() {
             opacity: [0.2, 0.4, 0.2],
           }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-gray-300 blur-[150px]" 
+          className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(209,213,219,1) 0%, rgba(209,213,219,0) 70%)", transform: "translateZ(0)" }}
         />
         
         {/* Subtle Grid */}

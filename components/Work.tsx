@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight, MoveHorizontal } from 'lucide-react';
 import Image from 'next/image';
 import { FadeIn } from './FadeIn';
+import { shimmer, toBase64 } from '@/lib/utils';
 
 const projects = [
   {
@@ -117,6 +118,8 @@ export function Work() {
                     src={project.image}
                     alt={`${project.title} - ${project.category}`}
                     fill
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(800, 600))}`}
                     referrerPolicy="no-referrer"
                     className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   />

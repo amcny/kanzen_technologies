@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FadeIn } from './FadeIn';
+import { shimmer, toBase64 } from '@/lib/utils';
 
 const testimonials = [
   {
@@ -52,7 +53,15 @@ export function Testimonials() {
                 {/* Client Message */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-gray-100 overflow-hidden shrink-0 border border-gray-200 shadow-sm relative mt-1 group-hover:scale-110 transition-transform">
-                    <Image src={testimonial.image} alt={`${testimonial.name} from ${testimonial.company}`} fill className="object-cover" referrerPolicy="no-referrer" />
+                    <Image 
+                      src={testimonial.image} 
+                      alt={`${testimonial.name} from ${testimonial.company}`} 
+                      fill 
+                      placeholder="blur"
+                      blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(100, 100))}`}
+                      className="object-cover" 
+                      referrerPolicy="no-referrer" 
+                    />
                   </div>
                   <div className="glass-panel bg-white/60 p-6 rounded-2xl rounded-tl-sm shadow-sm flex-1 group-hover:bg-white/80 transition-colors">
                     <p className="text-gray-900 font-medium leading-relaxed mb-4 font-light">

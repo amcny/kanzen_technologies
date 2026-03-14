@@ -40,7 +40,7 @@
     overflow: hidden;
   }
 
-  .lenis.lenis-smooth iframe {
+  .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
 }
@@ -50,7 +50,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-500;
   }
   .glass-panel {
-    @apply bg-white/60 backdrop-blur-xl border border-gray-200 shadow-sm;
+    @apply bg-white/70 backdrop-blur-md border border-gray-200 shadow-sm;
   }
   .premium-glow {
     @apply relative before:absolute before:inset-0 before:-z-10 before:translate-y-2 before:scale-[0.95] before:bg-black/5 before:blur-xl before:transition-all hover:before:bg-black/10 hover:before:scale-100;

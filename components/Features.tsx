@@ -41,7 +41,7 @@ export function Features() {
             {/* Card 1 - Full Width */}
             <FadeIn delay={0.1} className="sm:col-span-2">
               <div className="glass-panel bg-white/60 rounded-[2rem] p-8 md:p-10 group hover:bg-white/80 transition-colors h-full flex flex-col justify-between relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-black/5 rounded-full blur-3xl -mr-20 -mt-20 transition-opacity group-hover:opacity-100 opacity-50"></div>
+                <div className="absolute top-0 right-0 w-64 h-64 rounded-full -mr-20 -mt-20 transition-opacity group-hover:opacity-100 opacity-50" style={{ background: "radial-gradient(circle, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 70%)" }}></div>
                 <div className="w-14 h-14 rounded-2xl bg-gray-100 border border-gray-200 flex items-center justify-center mb-16 relative z-10 text-gray-900 group-hover:scale-110 transition-transform">
                   <Layers className="w-6 h-6" />
                 </div>

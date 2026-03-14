@@ -139,7 +139,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-24 md:mt-32 relative max-w-5xl mx-auto perspective-1000"
         >
-          <div className="absolute -inset-1 bg-gradient-to-b from-black/10 to-transparent rounded-t-[2.5rem] blur-xl opacity-50" />
+          <div className="absolute -inset-1 rounded-t-[2.5rem] opacity-50" style={{ boxShadow: "0 -20px 40px rgba(0,0,0,0.1)" }} />
           <div className="relative rounded-t-[2rem] glass-panel border-b-0 p-2 md:p-4 overflow-hidden transform rotate-x-12 translate-y-10 scale-105 origin-bottom bg-white/80">
             <div className="absolute inset-0 bg-gradient-to-b from-black/5 to-transparent pointer-events-none" />
             

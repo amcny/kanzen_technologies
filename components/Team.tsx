@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 import { FadeIn } from './FadeIn';
+import { shimmer, toBase64 } from '@/lib/utils';
 
 const team = [
   {
@@ -52,6 +53,8 @@ export function Team() {
                     src={member.image}
                     alt={member.name}
                     fill
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(400, 400))}`}
                     className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                     referrerPolicy="no-referrer"
                   />

@@ -4,6 +4,7 @@ import { Services } from '@/components/Services';
 import { Process } from '@/components/Process';
 import { Work } from '@/components/Work';
 import { Features } from '@/components/Features';
+import { Vision } from '@/components/Vision';
 import { Testimonials } from '@/components/Testimonials';
 import { Cta } from '@/components/Cta';
 
@@ -46,6 +47,7 @@ export default function Home() {
         <Process />
         <Work />
         <Features />
+        <Vision />
         <Testimonials />
         <Cta />
       </div>

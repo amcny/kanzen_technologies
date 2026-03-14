@@ -63,7 +63,7 @@ export function Services() {
                   
                   {/* Small overlapping images */}
                   <div className="flex items-center justify-center relative">
-                    <div className="absolute inset-0 bg-black/5 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ background: "radial-gradient(circle, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 70%)" }} />
                     <div className="z-10 -rotate-12 translate-x-3.5 transition-transform duration-500 ease-out group-hover:-translate-y-3 group-hover:-rotate-6 group-hover:scale-110">
                       <div className="w-[5rem] h-[3.8rem] md:w-[6rem] md:h-[4.5rem] border-[3px] border-white shadow-xl overflow-hidden bg-gray-100 rounded-lg">
                         <Image

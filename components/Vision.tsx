@@ -15,12 +15,12 @@ export function Vision() {
                 Our Vision
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 tracking-tighter pb-6 mb-2 text-balance mx-auto lg:mx-0">
-                Building for India's Evolving Ecosystem
+                Building for India&apos;s Evolving Ecosystem
               </h2>
             </FadeIn>
             <FadeIn delay={0.1} className="flex flex-col items-center lg:items-start">
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light mb-8 text-balance max-w-2xl mx-auto lg:mx-0">
-                We believe in locally driven innovation and bold investment. Our goal is to build solutions tailored specifically for India's diverse and rapidly growing digital landscape.
+                We believe in locally driven innovation and bold investment. Our goal is to build solutions tailored specifically for India&apos;s diverse and rapidly growing digital landscape.
               </p>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light text-balance max-w-2xl mx-auto lg:mx-0">
                 By understanding the unique challenges and opportunities within the region, we engineer platforms that empower businesses to scale efficiently and sustainably.

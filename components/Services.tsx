@@ -9,7 +9,7 @@ const services = [
     slug: 'custom-software-development',
     description: 'Scalable, secure, and robust software tailored to your specific business needs.',
     colSpan: 'col-span-12 lg:col-span-8',
-    rowSpan: 'row-span-2',
+    rowSpan: 'row-span-1',
     visual: 'software',
   },
   {

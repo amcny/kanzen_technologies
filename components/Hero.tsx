@@ -100,20 +100,6 @@ export function Hero() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="w-full mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="flex justify-center mb-10"
-          >
-            <div className="glass-panel inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-black/5 transition-colors cursor-pointer">
-              <Sparkles className="w-4 h-4 text-gray-600" />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
-                Accepting new projects for Q3
-              </span>
-            </div>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

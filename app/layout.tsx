@@ -35,6 +35,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/kanzen_circle.png',
+    apple: '/kanzen_circle.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

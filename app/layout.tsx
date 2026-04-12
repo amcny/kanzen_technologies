@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/kanzen_circle.png',
-    apple: '/kanzen_circle.png',
+    icon: 'https://i.ibb.co/4Zj8QkF3/kanzen-circle.png',
+    apple: 'https://i.ibb.co/4Zj8QkF3/kanzen-circle.png',
   },
   openGraph: {
     type: 'website',

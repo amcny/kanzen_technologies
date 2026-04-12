@@ -237,7 +237,7 @@ export function Features() {
     <section id="about" className="py-32 md:py-48 bg-white border-y border-gray-100 overflow-hidden relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,0,0,0.02)_0%,transparent_100%)] pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header Section */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 md:mb-32">

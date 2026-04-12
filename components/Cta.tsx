@@ -21,7 +21,7 @@ export function Cta() {
   return (
     <section id="contact" className="py-24 md:py-32 bg-white border-y border-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,0,0,0.03)_0%,transparent_100%)] pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           
           {/* Left Column: Text & Info */}

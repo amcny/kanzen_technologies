@@ -41,7 +41,7 @@ export function Footer() {
         </h2>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 mt-12">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10 mt-12">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-16 mb-24">
           <div className="col-span-2 lg:col-span-2">
             <Link 

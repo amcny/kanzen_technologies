@@ -18,7 +18,7 @@ export function SocialProof() {
     <section className="py-20 md:py-24 bg-white border-b border-gray-100 overflow-hidden relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[1400px] mx-auto relative z-10">
         <FadeIn>
           <p className="text-center text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-[0.15em] md:tracking-[0.2em] mb-10 md:mb-12 px-4">
             Trusted by growing companies worldwide

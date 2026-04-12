@@ -200,7 +200,7 @@ export function Services() {
   return (
     <section id="services" className="py-24 md:py-32 bg-white border-y border-gray-100 overflow-hidden relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.02)_0%,transparent_100%)] pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-gray-900 tracking-tighter pb-4 mb-2 text-balance">
@@ -223,13 +223,13 @@ export function Services() {
               <FadeIn delay={index * 0.1} className="h-full">
                 <Link 
                   href={`/services/${service.slug}`} 
-                  className="flex flex-col h-full bg-white border border-gray-200/80 rounded-2xl p-6 md:p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-500 ease-out hover:-translate-y-1"
+                  className={`flex flex-col ${service.colSpan.includes('lg:col-span-8') ? 'lg:flex-row lg:items-center' : ''} h-full bg-white border border-gray-200/80 rounded-2xl p-6 md:p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-500 ease-out hover:-translate-y-1`}
                 >
-                  <div className="mb-6 md:mb-8 flex-1">
+                  <div className={`mb-6 md:mb-8 ${service.colSpan.includes('lg:col-span-8') ? 'lg:mb-0 lg:mr-8 lg:w-3/5 lg:h-full' : 'flex-1'}`}>
                     <ServiceVisual type={service.visual} />
                   </div>
                   
-                  <div className="mt-auto">
+                  <div className={`mt-auto ${service.colSpan.includes('lg:col-span-8') ? 'lg:w-2/5 lg:mt-0' : ''}`}>
                     <h3 className="text-xl md:text-2xl font-display font-bold tracking-tight text-gray-900 mb-2">
                       {service.title}
                     </h3>

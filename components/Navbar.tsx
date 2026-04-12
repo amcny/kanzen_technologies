@@ -86,7 +86,7 @@ export function Navbar() {
         className={`w-full transition-all duration-500 flex items-center justify-between ${
           isScrolled 
             ? 'max-w-5xl glass-panel rounded-full py-3 px-6' 
-            : 'max-w-7xl bg-transparent py-6 px-6 md:px-12'
+            : 'max-w-[1400px] bg-transparent py-6 px-6 md:px-12'
         }`}
       >
         <Link 

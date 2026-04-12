@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: 'Kanzen Technologies',
     images: [
       {
-        url: '/kanzen_share.png',
+        url: 'https://i.ibb.co/p6NGr94C/kanzen-share.png',
         width: 1200,
         height: 1200,
         alt: 'Kanzen Technologies - Custom Software & Digital Products',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kanzen Technologies | Custom Software & Digital Products',
     description: 'Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.',
-    images: ['/kanzen_share.png'],
+    images: ['https://i.ibb.co/p6NGr94C/kanzen-share.png'],
     creator: '@kanzentech',
   },
   robots: {

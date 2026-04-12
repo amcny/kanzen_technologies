@@ -98,7 +98,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="w-full mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

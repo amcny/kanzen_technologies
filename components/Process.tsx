@@ -30,7 +30,7 @@ export function Process() {
   return (
     <section id="process" className="py-32 md:py-48 bg-primary border-y border-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,0.03)_0%,transparent_70%)] pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <FadeIn>
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 tracking-tighter pb-4 mb-2 text-balance">

@@ -10,10 +10,10 @@ import { useInView } from 'motion/react';
 
 const projects = [
   {
-    title: 'AP TEACHER INFO',
+    title: 'Teacher Info',
     category: 'Web Portal',
     description: 'Central source for information and updates for Andhra Pradesh Teachers.',
-    image: 'https://i.ibb.co/B59JTfhp/Screenshot-2026-03-19-at-3-19-51-PM.png',
+    image: 'https://i.ibb.co/Dfv2QQQ8/Screenshot-2026-04-22-at-7-50-50-PM.png',
     slug: 'ap-teacher-info',
     liveUrl: 'https://teacherinfo.net/',
   },

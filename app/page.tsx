@@ -3,8 +3,12 @@ import { SocialProof } from '@/components/SocialProof';
 import { Services } from '@/components/Services';
 import { Process } from '@/components/Process';
 import { Work } from '@/components/Work';
+import { MiniCta } from '@/components/MiniCta';
+import { WhyKanzen } from '@/components/WhyKanzen';
+import { TechStack } from '@/components/TechStack';
 import { Features } from '@/components/Features';
 import { Vision } from '@/components/Vision';
+import { Faq } from '@/components/Faq';
 import { Testimonials } from '@/components/Testimonials';
 import { Cta } from '@/components/Cta';
 
@@ -46,8 +50,12 @@ export default function Home() {
         <Services />
         <Process />
         <Work />
+        <MiniCta />
+        <WhyKanzen />
+        <TechStack />
         <Features />
         <Vision />
+        <Faq />
         <Testimonials />
         <Cta />
       </div>

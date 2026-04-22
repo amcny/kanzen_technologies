@@ -20,10 +20,10 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
 
   const projectDetails: Record<string, { title: string, category: string, description: string, image: string, problem: string, solution: string, results: string, liveUrl?: string }> = {
     'ap-teacher-info': {
-      title: 'AP TEACHER INFO',
+      title: 'Teacher Info',
       category: 'Web Portal',
       description: 'Central source for information and updates for Andhra Pradesh Teachers.',
-      image: 'https://i.ibb.co/B59JTfhp/Screenshot-2026-03-19-at-3-19-51-PM.png',
+      image: 'https://i.ibb.co/Dfv2QQQ8/Screenshot-2026-04-22-at-7-50-50-PM.png',
       problem: 'Teachers across Andhra Pradesh lacked a centralized, reliable platform to access official updates, resources, and essential information, leading to confusion and delays.',
       solution: 'We built a robust web portal that aggregates all necessary information in one easy-to-navigate interface, ensuring high availability and fast load times even during peak traffic.',
       results: 'The portal now serves thousands of teachers daily, significantly reducing the time spent searching for official information and improving overall communication.',

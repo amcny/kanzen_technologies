@@ -106,8 +106,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-[clamp(1.25rem,6.5vw,6.5rem)] font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-800 to-gray-500 leading-[1.1] tracking-tighter pb-4 mb-4"
           >
-            <span className="block whitespace-nowrap">Building smart software for</span>
-            <span className="block whitespace-nowrap">India&apos;s growing businesses.</span>
+            <span className="block whitespace-nowrap">Custom software that scales</span>
+            <span className="block whitespace-nowrap">revenue & automates growth.</span>
           </motion.h1>
 
           <motion.p
@@ -116,7 +116,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed text-balance font-light"
           >
-            We work with Indian companies to build digital products that are easy to use, reliable, and help you scale smoothly.
+            We work with ambitious companies to build high-performance digital products that drive measurable outcomes and simplify your operations.
           </motion.p>
 
           <motion.div

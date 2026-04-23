@@ -19,10 +19,10 @@ export function Vision() {
           </FadeIn>
           <FadeIn delay={0.1} className="flex-1 lg:max-w-2xl">
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light mb-8 text-balance mx-auto lg:mx-0">
-              We believe in locally driven innovation and bold investment. Our goal is to build solutions tailored specifically for India&apos;s diverse and rapidly growing digital landscape.
+              We believe in locally driven innovation. Our goal is to build digital platforms that solve real-world operational bottlenecks for fast-growing Indian enterprises, particularly in Logistics, EdTech, Healthcare, and SaaS.
             </p>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light text-balance mx-auto lg:mx-0">
-              By understanding the unique challenges and opportunities within the region, we engineer platforms that empower businesses to scale seamlessly and sustainably.
+              By deeply understanding the technical nuances of India's ecosystem—from mobile-first consumer habits to complex regulatory logistics—we engineer custom software that automates workflows and scales reliably.
             </p>
           </FadeIn>
         </div>

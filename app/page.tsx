@@ -19,7 +19,7 @@ export default function Home() {
     "name": "Kanzen Technologies",
     "url": "https://kanzen.tech",
     "logo": "https://kanzen.tech/logo.png",
-    "description": "Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.",
+    "description": "Kanzen Technologies builds custom enterprise software, mobile apps, and SaaS platforms. We help fast-growing businesses in India scale with tailored technology and AI integrations.",
     "sameAs": [
       "https://twitter.com/kanzentech",
       "https://linkedin.com/company/kanzentech",
@@ -47,12 +47,12 @@ export default function Home() {
         />
         <Hero />
         <SocialProof />
+        <TechStack />
+        <WhyKanzen />
         <Services />
         <Process />
         <Work />
         <MiniCta />
-        <WhyKanzen />
-        <TechStack />
         <Features />
         <Vision />
         <Faq />

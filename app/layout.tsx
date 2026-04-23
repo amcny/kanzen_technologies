@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     default: 'Kanzen Technologies | Custom Software & Digital Products',
     template: '%s | Kanzen Technologies',
   },
-  description: 'Kanzen Technologies builds high-quality software, mobile apps, and digital platforms. We help businesses grow with custom technology solutions, AI integration, and expert engineering.',
+  description: 'Kanzen Technologies builds custom enterprise software, mobile apps, and SaaS platforms. We help fast-growing businesses in India scale with tailored technology and AI integrations.',
   keywords: [
-    'Software Development Company', 'Custom Software Development', 'Web App Development', 'Mobile App Development', 
-    'AI Integration', 'SaaS Development', 'Tech Agency', 'Kanzen Technologies', 'Digital Transformation',
-    'Enterprise Software', 'React Development', 'Next.js Experts', 'Node.js Development', 'UI/UX Design',
-    'Continuous Improvement', 'Software Engineering'
+    'Custom Software Development India', 'Enterprise Software Solutions India', 'Web App Development', 'Mobile App Development India', 
+    'AI Workflow Automation', 'SaaS Development Agency', 'Tech Agency India', 'Kanzen Technologies', 'Digital Transformation India',
+    'React Native Development', 'Next.js Experts', 'Node.js Architecture', 'UI/UX Design Services',
+    'Custom ERP India', 'Software Engineering'
   ],
   authors: [{ name: 'Kanzen Technologies', url: 'https://kanzen.tech' }],
   creator: 'Kanzen Technologies',

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import type { Metadata } from 'next';
 
 export function generateStaticParams() {
   return [
@@ -15,10 +16,7 @@ export function generateStaticParams() {
   ];
 }
 
-export default async function WorkPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-
-  const projectDetails: Record<string, { title: string, category: string, description: string, image: string, problem: string, solution: string, results: string, liveUrl?: string }> = {
+const projectDetails: Record<string, { title: string, category: string, description: string, image: string, problem: string, solution: string, results: string, liveUrl?: string }> = {
     'ap-teacher-info': {
       title: 'Teacher Info',
       category: 'Web Portal',
@@ -79,8 +77,30 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
       results: 'Drastically reduced wait times at the campus gates and provided administration with accurate, real-time security logs.',
       liveUrl: 'https://kanzen.tech',
     },
-  };
+};
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = projectDetails[slug];
+  
+  if (!project) {
+    return { title: 'Project Not Found' };
+  }
+
+  return {
+    title: `${project.title} - Case Study`,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} - Case Study | Kanzen Technologies`,
+      description: project.description,
+      images: [project.image],
+      type: 'article',
+    }
+  };
+}
+
+export default async function WorkPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const project = projectDetails[slug];
 
   if (!project) {

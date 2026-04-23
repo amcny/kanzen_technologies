@@ -28,13 +28,13 @@ export function Cta() {
           <div className="flex flex-col justify-center text-center lg:text-left">
             <FadeIn>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 tracking-tighter pb-4 mb-2">
-                Let&apos;s Work Together
+                Let&apos;s Build Your Next Project
               </h2>
             </FadeIn>
             
             <FadeIn delay={0.1}>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10 font-light">
-                Send us a message to talk about your project. Whether you are ready to start or just have questions, we are here to help you build the right software for your business.
+                Whether you need a custom SaaS platform, a mobile application, or want to explore AI automation for your business, drop us a line. We build specifically for India's digital ecosystem.
               </p>
             </FadeIn>
             

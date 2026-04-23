@@ -66,7 +66,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-gray-600 max-w-sm leading-relaxed mb-8 font-light">
-              Building high-quality software for businesses around the world.
+              Building high-quality software for businesses in India.
             </p>
           </div>
 

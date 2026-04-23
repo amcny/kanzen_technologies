@@ -125,7 +125,7 @@ export function Navbar() {
             data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":1,"theme":"light"}'
             className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 transition-colors rounded-full premium-glow"
           >
-            Book a Strategy Call
+            Start Your Project
           </button>
         </div>
 
@@ -182,7 +182,7 @@ export function Navbar() {
               }}
               className="inline-flex items-center justify-center px-6 py-4 mt-2 text-base font-medium text-white bg-gray-900 hover:bg-gray-800 transition-colors rounded-full text-center"
             >
-              Book a Strategy Call
+              Start Your Project
             </button>
           </motion.div>
         )}

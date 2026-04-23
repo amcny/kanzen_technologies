@@ -21,7 +21,7 @@ const services = [
     visual: 'ai',
   },
   {
-    title: 'Web App Development',
+    title: 'Web & SaaS Development',
     slug: 'web-development',
     description: 'High-performance, responsive web applications built with modern frameworks.',
     colSpan: 'col-span-12 md:col-span-6 lg:col-span-4',
@@ -45,7 +45,7 @@ const services = [
     visual: 'design',
   },
   {
-    title: 'Cloud & Server',
+    title: 'Cloud & Infrastructure Management',
     slug: 'cloud-server-management',
     description: 'Secure, scalable cloud infrastructure and DevOps pipelines.',
     colSpan: 'col-span-12 md:col-span-4 lg:col-span-4',

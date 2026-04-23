@@ -24,7 +24,7 @@ export function MiniCta() {
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-900 bg-white hover:bg-gray-100 transition-colors rounded-full group"
             >
               <Calendar className="mr-2 w-5 h-5" />
-              Book a Strategy Call
+              Tell us about your project
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>

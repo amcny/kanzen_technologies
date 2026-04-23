@@ -6,18 +6,18 @@ import { Shield, Zap, HeartHandshake } from 'lucide-react';
 const pillars = [
   {
     icon: Zap,
-    title: "Speed to Market",
-    description: "We employ agile methodologies and reusable components to rapidly deliver high-quality software without reinventing the wheel."
+    title: "Agile Execution",
+    description: "We don't do bloatware. Our engineers ship usable, high-performance features in rapid two-week sprints so your team can test the market and see faster ROI."
   },
   {
     icon: Shield,
-    title: "Engineering Excellence",
-    description: "No shortcuts. We write secure, testable, and scalable code designed to handle the scale and demands of modern business environments."
+    title: "India-Scale Architecture",
+    description: "Built for massive concurrency. We design backend systems capable of handling the intense volume and varied network conditions of the Indian market without breaking a sweat."
   },
   {
     icon: HeartHandshake,
-    title: "True Partnership",
-    description: "We don't just build and vanish. We act as an extension of your team, providing strategic guidance and long-term support to ensure your success."
+    title: "Strategic Partnership",
+    description: "Consider us your virtual CTO. We provide actionable technical guidance, helping you avoid costly architecture traps so you can focus strictly on growing your revenue."
   }
 ];
 
@@ -28,12 +28,12 @@ export function WhyKanzen() {
          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
            <FadeIn>
              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 tracking-tighter pb-4 text-balance">
-               Why Choose Kanzen?
+               Why Partner With Kanzen?
              </h2>
            </FadeIn>
            <FadeIn delay={0.1}>
              <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-light">
-               We combine deep technical expertise with a business-first mindset to deliver software that actually moves the needle.
+               We don't just write code; we build resilient technical foundations that drive enterprise value.
              </p>
            </FadeIn>
          </div>

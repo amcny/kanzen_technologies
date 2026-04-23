@@ -21,7 +21,7 @@ export function SocialProof() {
       <div className="max-w-[1400px] mx-auto relative z-10">
         <FadeIn>
           <p className="text-center text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-[0.15em] md:tracking-[0.2em] mb-10 md:mb-12 px-4">
-            Trusted by growing companies worldwide
+            Trusted by growing companies across India
           </p>
         </FadeIn>
         

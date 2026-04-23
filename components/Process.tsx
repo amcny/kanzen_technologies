@@ -6,23 +6,23 @@ import { motion } from 'motion/react';
 const steps = [
   {
     number: '01',
-    title: 'Planning & Strategy',
-    description: 'We start by understanding your goals, your users, and your market to create a clear plan for success.',
+    title: 'Discovery & Blueprint',
+    description: 'We audit your existing workflows. Deliverable: A comprehensive technical blueprint, feature roadmap, and fixed pricing within 1-2 weeks.',
   },
   {
     number: '02',
-    title: 'Design & User Experience',
-    description: 'We design clean, easy-to-use interfaces that your customers will love.',
+    title: 'UI/UX Prototyping',
+    description: 'We wireframe the entire platform. Deliverable: High-fidelity Figma prototypes so you can click through your app before we write a single line of code (2-3 weeks).',
   },
   {
     number: '03',
-    title: 'Development & Building',
-    description: 'Our team writes high-quality code to build fast, secure, and reliable software.',
+    title: 'Agile Engineering',
+    description: 'We build in 2-week sprints. Deliverable: You get a staging link updated bi-weekly. We handle the frontend, backend, and security architecture (8-12 weeks).',
   },
   {
     number: '04',
-    title: 'Launch & Support',
-    description: 'We help you launch smoothly and provide ongoing support to keep your software running perfectly.',
+    title: 'Launch & Handoff',
+    description: 'We deploy the application to your cloud. Deliverable: 100% intellectual property transfer, live production deployment, and 30 days of post-launch hypercare.',
   },
 ];
 
@@ -32,14 +32,14 @@ export function Process() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,0.03)_0%,transparent_70%)] pointer-events-none" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
-          <FadeIn>
+           <FadeIn>
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 tracking-tighter pb-4 mb-2 text-balance">
-              How We Work
+              How We Execute
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light">
-              A simple, clear process to turn your ideas into reality.
+              No guessing games. A transparent, milestone-driven framework.
             </p>
           </FadeIn>
         </div>

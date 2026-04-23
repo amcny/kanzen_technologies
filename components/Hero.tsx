@@ -104,17 +104,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(1.25rem,6.5vw,6.5rem)] font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-900 via-gray-800 to-gray-500 leading-[1.1] tracking-tighter pb-4 mb-4"
+            className="text-4xl min-[400px]:text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-display font-black text-transparent bg-clip-text bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 leading-[1.05] tracking-tight pb-4 mb-4 text-balance mx-auto max-w-[1200px]"
           >
-            <span className="block whitespace-nowrap">Custom software that scales</span>
-            <span className="block whitespace-nowrap">revenue & automates growth.</span>
+            Custom software that scales <br className="hidden md:block"/> revenue & automates growth.
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed text-balance font-light"
+            className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed text-balance font-light drop-shadow-sm"
           >
             We work with ambitious companies to build high-performance digital products that drive measurable outcomes and simplify your operations.
           </motion.p>

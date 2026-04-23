@@ -34,7 +34,7 @@ export function Cta() {
             
             <FadeIn delay={0.1}>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10 font-light">
-                Whether you need a custom SaaS platform, a mobile application, or want to explore AI automation for your business, drop us a line. We build specifically for India's digital ecosystem.
+                Whether you need a custom SaaS platform, a mobile application, or want to explore AI automation for your business, drop us a line. We build specifically for India&apos;s digital ecosystem.
               </p>
             </FadeIn>
             

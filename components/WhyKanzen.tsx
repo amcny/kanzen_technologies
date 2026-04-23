@@ -123,7 +123,7 @@ function InteractivePillar({ pillar, index }: { pillar: typeof pillars[0], index
             animate={{ y: [-6, 6, -6] }}
             transition={{ duration: 5 + index * 0.2, repeat: Infinity, ease: "easeInOut", delay: index * 0.3 }}
             style={{ rotateX: cardRotateX, rotateY: cardRotateY, transformStyle: "preserve-3d" }}
-            className="bg-white/90 backdrop-blur-md p-8 md:p-10 rounded-3xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-shadow duration-500 ease-out relative overflow-hidden text-center sm:text-left mx-auto max-w-xl lg:max-w-none"
+            className="bg-white/95 p-8 md:p-10 rounded-3xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-shadow duration-500 ease-out relative overflow-hidden text-center sm:text-left mx-auto max-w-xl lg:max-w-none"
           >
             {/* Animated blue left edge */}
             <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600 transform origin-bottom translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out hidden sm:block" />
@@ -161,7 +161,7 @@ export function WhyKanzen() {
     <section className="py-24 md:py-32 bg-gray-50 relative border-y border-gray-200 overflow-hidden">
        
        {/* Premium Animated Background (Orbs + Grid) */}
-       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
          {/* Glowing Orbs */}
          <motion.div 
            animate={{ 
@@ -171,7 +171,7 @@ export function WhyKanzen() {
              y: [0, -40, 0],
            }}
            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-           className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full mix-blend-multiply filter blur-3xl opacity-50"
+           className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full opacity-50 will-change-transform transform-gpu"
            style={{ background: "radial-gradient(circle, rgba(147,197,253,0.4) 0%, rgba(147,197,253,0) 70%)" }}
          />
          <motion.div 
@@ -182,7 +182,7 @@ export function WhyKanzen() {
              y: [0, 30, 0],
            }}
            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-           className="absolute bottom-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full mix-blend-multiply filter blur-3xl opacity-50"
+           className="absolute bottom-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full opacity-50 will-change-transform transform-gpu"
            style={{ background: "radial-gradient(circle, rgba(216,180,254,0.3) 0%, rgba(216,180,254,0) 70%)" }}
          />
          
@@ -204,7 +204,7 @@ export function WhyKanzen() {
            <div className="max-w-md pb-3 text-center md:text-left mx-auto md:mx-0">
              <FadeIn delay={0.1}>
                <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-light">
-                 We don't just write code; we build resilient technical foundations that drive enterprise value.
+                 We don&apos;t just write code; we build resilient technical foundations that drive enterprise value.
                </p>
              </FadeIn>
            </div>

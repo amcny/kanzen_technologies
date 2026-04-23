@@ -22,7 +22,7 @@ export function Vision() {
               We believe in locally driven innovation. Our goal is to build digital platforms that solve real-world operational bottlenecks for fast-growing Indian enterprises, particularly in Logistics, EdTech, Healthcare, and SaaS.
             </p>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light text-balance mx-auto lg:mx-0">
-              By deeply understanding the technical nuances of India's ecosystem—from mobile-first consumer habits to complex regulatory logistics—we engineer custom software that automates workflows and scales reliably.
+              By deeply understanding the technical nuances of India&apos;s ecosystem—from mobile-first consumer habits to complex regulatory logistics—we engineer custom software that automates workflows and scales reliably.
             </p>
           </FadeIn>
         </div>

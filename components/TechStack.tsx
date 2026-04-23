@@ -49,6 +49,8 @@ export function TechStack() {
               className="mx-6 md:mx-10 flex flex-col items-center justify-center opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
               title={tech.name}
             >
+              {/* @eslint-disable-next-line @next/next/no-img-element */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src={tech.url} 
                 alt={`${tech.name} logo`} 
@@ -65,6 +67,7 @@ export function TechStack() {
               className="mx-6 md:mx-10 flex flex-col items-center justify-center opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
               title={tech.name}
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src={tech.url} 
                 alt={`${tech.name} logo`} 
